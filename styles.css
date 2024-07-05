@@ -3,12 +3,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*background-color: #f0f8ff; /* 
 }
 
 /* Header section */
 header {
-    background-color: #808000; /* Olive green background color */
+    background-color: #708238; /* Olive green background color */
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -16,7 +15,7 @@ header {
 
 /* Navbar */
 .navbar {
-    background-color: #808000; /* Olive green background color */
+    background-color: #708238; /* Olive green background color */
 }
 
 main {
@@ -30,6 +29,30 @@ main {
     border-radius: 10px;
 }
 
+/* Change Explore Tours button color */
+a.btn-success[href="#tours"] {
+    background-color: #708238; /* New background color */
+    border-color: #708238; /* New border color */
+}
+
+a.btn-success[href="#tours"]:hover {
+    background-color: #445626; /* New hover background color */
+    border-color: #445626; /* New hover border color */
+}
+
+/* Change Send button color */
+form button.btn.btn-success {
+    background-color: #708238; /* New background color */
+    border-color: #708238; /* New border color */
+    color: white; /* Text color */
+}
+
+form button.btn.btn-success:hover {
+    background-color: #445626; /* New hover background color */
+    border-color: #445626; /* New hover border color */
+}
+
+
 .card-deck .card {
     margin-bottom: 1.5em;
     background-color: #ffffff; /* White background color */
@@ -38,32 +61,5 @@ main {
 footer {
     background-color: #333; /* Dark background color */
     color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-form {
-    margin-top: 1em;
-}
-
-form label {
-    margin-top: 1em;
-}
-
-form input, form textarea {
-    padding: 0.5em;
-    margin-top: 0.5em;
-}
-
-form button {
-    margin-top: 1em;
-    padding: 0.5em;
-    background-color: #4CAF50; /* Green button background color */
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    text-align: center
 }
